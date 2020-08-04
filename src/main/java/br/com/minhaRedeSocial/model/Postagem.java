@@ -25,11 +25,11 @@ public class Postagem {
 	private int likes;
 	
 	@ManyToOne
-	@JsonIgnoreProperties
+	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;
 	
 	@ManyToOne
-	@JsonIgnoreProperties
+	@JsonIgnoreProperties("postagem")
 	private Tema tema;
 	
 	public Usuario getUsuario() {
